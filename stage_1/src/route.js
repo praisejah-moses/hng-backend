@@ -4,6 +4,6 @@ import { root, stageOneEndpoint } from "./controller.js"
 const router = Router()
 
 router.get('/',root)
-router.get('/stage-one',stageOneEndpoint)
+router.get('/api',stageOneEndpoint)
 
 export default router;
