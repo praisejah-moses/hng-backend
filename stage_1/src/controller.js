@@ -12,8 +12,8 @@ export const stageOneEndpoint = (req,res)=>{
                     "current_day":date.getDay,
                     "utc_time":date.getUTCHours()+":"+date.getUTCMinutes()+":"+date.getUTCSeconds(),
                     "track":req.query.track,
-                    "github_file_url":"",
-                    "github_repo_url":"",
+                    "github_file_url":"https://github.com/praisejah-moses/hng-backend/blob/main/stage_1/app.js",
+                    "github_repo_url":"https://github.com/praisejah-moses/hng-backend/tree/main/stage_1",
                     "staus_code":200,
                 })
         }
