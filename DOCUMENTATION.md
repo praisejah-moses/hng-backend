@@ -34,8 +34,8 @@ A Restful API that can perfom CRUD operations an a Person resource.
 **Request Format:**
 ```json
 {
-  "userId": "1",  // Required & Unique field. Should be a string and cannot be blank.
-  "slack_name": "joe_boy",  // Required & Unique field. Should be a string and cannot be blank.
+  "userId": "3",  // Required & Unique field. Should be a string and cannot be blank.
+  "name": "joe_boy",  // Required & Unique field. Should be a string and cannot be blank.
   "track": "backend",  // Required field. Should be a string and cannot be blank.
   "currentStage": "2",  // Required field. Should be a string and cannot be blank
 }
@@ -46,7 +46,7 @@ A Restful API that can perfom CRUD operations an a Person resource.
 ```json
 {
   "userId": "1",
-  "slackName": "joe_boy",
+  "name": "joe_boy",
   "track": "backend",
   "currentStage": "2",
   "_id": "ObjectId",
@@ -72,7 +72,7 @@ A Restful API that can perfom CRUD operations an a Person resource.
 ```json
 {
   "userId": "1",
-  "slackName": "joe_boy",
+  "name": "joe_boy",
   "track": "backend",
   "currentStage": "2",
   "_id": "ObjectId",
@@ -98,8 +98,8 @@ A Restful API that can perfom CRUD operations an a Person resource.
 
 ```json
 {
-  "slackName":newName,
-  "currentStage":newStage
+  "name":new_name,
+  "currentStage":new_stage
 }
 ```
 **Response Format (Success - Status Code: 200):**
