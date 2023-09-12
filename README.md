@@ -31,9 +31,13 @@
 ## Usage
 The available API's can be accessed on http://localhost:3000 using a tool like curl or Postman with the appropriate URLs and JSON body
 <h6>Stage One Endpoint</h6>
-<p>Stage one api can ba accessed at <em>/stage-one/api</em></p>
+
+Stage one api can ba accessed at `/stage-one/api`
 <p>The endpoint takes two GET request query parameters(?slack_name=example&track=track) and returns specific information in JSON format</p>
 <h6>Stage Two Endpoint</h6>
-<p>Stage two api can ba accessed at <em>/api and /api/:user_id</em></p>
-<p>The <em>/api</em> accepts a POST request with a JSON document passed in the request body</p>
-<p>The <em>/api/:user_id</em> accepts a GET, DELETE and PATCH request, the PATCH request accepts a JSON document passed in the request body</p>
+
+Stage two api can ba accessed at `/api and /api/:user_id`
+
+The`/api` accepts a POST request with a JSON document passed in the request body
+
+The `/api/:user_id` accepts a GET, DELETE and PATCH request, the PATCH request accepts a JSON document passed in the request body
