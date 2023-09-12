@@ -7,7 +7,7 @@ const personSchema = new Schema({
     required: true,
     unique: true
   },  
-  slackName: {
+  name: {
     type: String,
     required: true,
     unique: true

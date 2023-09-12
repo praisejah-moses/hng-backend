@@ -4,11 +4,10 @@ export async function dbGetPerson(req, res, next) {
     const personId = req.params.id;
 
     const person = await PersonModel.findOne(
-        { $or: [{userId:personId},{slackName:personId}]}
+        { $or: [{userId:personId},{name:personId}]}
     ).lean();
     if (!person) {
-        res.statusCode = 500;
-        return res.json({ errors: 'Error retriving' });
+        return res.status(404).json({ errors: 'Error retriving' });
       }
     req.person = person;
     next()
