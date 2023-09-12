@@ -6,7 +6,7 @@ export async function deletePerson(req, res) {
         console.log(userId)
         const status = dbDeletePerson(userId)
         if(status){
-            res.status(200).send({status: `deleted user with id ${userId}`});
+            res.status(204).send({status: `deleted user with id ${userId}`});
         }
     }catch(err){
         res.status(500).send(err.message)

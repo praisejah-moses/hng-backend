@@ -5,7 +5,7 @@ export async function createPerson(req, res) {
     const {userId,slackName,track,currentStage} = req.body
     const person = await dbSavePerson(userId,slackName, track, currentStage)
     if(person){
-        res.status(200).send(person)
+        res.status(201).send(person)
     }
     }catch(err){
         res.status(500).send(err.message)
