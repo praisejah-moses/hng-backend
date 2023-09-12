@@ -34,10 +34,10 @@ A Restful API that can perfom CRUD operations an a Person resource.
 **Request Format:**
 ```json
 {
-  "userId": "3",  // Required & Unique field. Should be a string and cannot be blank.
-  "name": "joe_boy",  // Required & Unique field. Should be a string and cannot be blank.
-  "track": "backend",  // Required field. Should be a string and cannot be blank.
-  "currentStage": "2",  // Required field. Should be a string and cannot be blank
+  "userId": "3",  
+  "name": "joe_boy",  
+  "track": "backend",  
+  "currentStage": "2", 
 }
 ```
 
